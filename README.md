@@ -36,13 +36,17 @@ The choice of communication protocol is crucial. Many chat applications use TCP 
 ## Considerations in Development:
 Concurrency and Multithreading: • Chat applications often require handling multiple connections simultaneously. The server must be designed to support concurrency, commonly achieved through multithreading or asynchronous programming.
 
-Security: • Ensuring the security of user data and messages is paramount. Encryption techniques, such as SSL/TLS, can be implemented to secure data in transit. Proper user authentication mechanisms help prevent unauthorized access.
+Security: 
+ • Ensuring the security of user data and messages is paramount. Encryption techniques, such as SSL/TLS, can be implemented to secure data in transit. Proper user authentication mechanisms help prevent unauthorized access.
 
-Scalability: • As the number of users grows, the chat application must be scalable. This involves optimizing server-side architecture to handle increasing loads efficiently.
+Scalability:  
+ • As the number of users grows, the chat application must be scalable. This involves optimizing server-side architecture to handle increasing loads efficiently.
 
-Persistence: • Some chat applications implement message persistence, allowing users to retrieve past messages. This may involve using databases to store and retrieve chat history.
+Persistence: 
+ • Some chat applications implement message persistence, allowing users to retrieve past messages. This may involve using databases to store and retrieve chat history.
 
-Notification Systems: • Implementing real-time notifications to inform users of new messages, user presence changes, or other relevant events.
+Notification Systems: 
+ • Implementing real-time notifications to inform users of new messages, user presence changes, or other relevant events.
 
 Client-server chat applications are versatile tools that facilitate real-time communication between users over a network. They incorporate various components, including server-side and client-side elements, and must consider factors such as security, scalability, and concurrency. As technology continues to advance, client-server chat applications remain integral for collaborative communication in various domains.
 
