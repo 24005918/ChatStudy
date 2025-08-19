@@ -54,6 +54,7 @@ Client-server chat applications are foundational to real-time communication over
 
 ## PROGRAM:
 # client:
+
 import socket
 
 client = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
@@ -65,9 +66,7 @@ done=False
 while not done:
     client.send(input("Message ").encode('utf-8'))
     msg = client.recv(1024).decode('utf-8')
-   
-    
-    
+
     if msg == 'quit':
         done=True
     else:
@@ -76,6 +75,7 @@ while not done:
 
 
 client.close()
+
 
 
 # server
@@ -92,26 +92,23 @@ done = False
 
 while not done:
     msg = client.recv(1024).decode('utf-8')
-   
-    
-    
-    
-    
+
     if msg == 'quit':
         done = True
     else:
         print(msg)
+
     client.send(input("Message ").encode('utf-8'))
-
-
 
 
 client.close()
 server.close()
 
+
+
 ## OUTPUT:
 <img width="827" height="293" alt="{7C0BA5CB-81C3-4B15-9ABA-E08D2CD3552A}" src="https://github.com/user-attachments/assets/78738f20-ce28-488f-8691-1d9385d20e28" />
-![Uploading {0F88E298-E439-4F65-8349-87FFE74B59A4}.png…]()
+<img width="841" height="402" alt="{0F88E298-E439-4F65-8349-87FFE74B59A4}" src="https://github.com/user-attachments/assets/3dee5261-a434-4177-80f5-107310f1b78d" />
 
 ## Result:
 Thus the study on Client Server Chat Applications has been performed
